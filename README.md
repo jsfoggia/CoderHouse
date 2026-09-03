@@ -2,21 +2,40 @@
 
 Este repositorio contiene las pre-entregas del curso de SQL, desarrolladas sobre la base de datos `retail_project`.
 
-El proyecto incluye la creación y carga de datos, consultas de análisis de negocio, operaciones de modificación de datos y consultas avanzadas utilizando Window Functions.
-
-## Estructura del proyecto
-
-El repositorio contiene los siguientes scripts:
-
-- `preentrega.sql` — Creación de la base de datos, tablas, carga de datos y operaciones básicas.
-- `pre-entrega-modulo4.sql` — Consultas multicapa para análisis de negocio.
-- `preentrega_analisis_avanzado.sql` — Análisis avanzado utilizando Window Functions.
-
 ## Ejecución
 
-### 1. Crear la base de datos
+1. Ejecutar el script para crear la base de datos `retail_project`.
+2. Conectarse a la base de datos.
+3. Ejecutar los scripts de cada pre-entrega.
 
-Ejecutar el script inicial para crear la base de datos:
+## Pre-entrega 4
 
-```sql
-CREATE DATABASE retail_project;
+El archivo `pre-entrega-modulo4.sql` contiene consultas multicapa para analizar:
+
+- Rentabilidad por categoría.
+- Clientes sin compras.
+- Top de compras por cliente.
+
+Las consultas utilizan `JOIN`, `GROUP BY`, `HAVING`, `COALESCE`, CTEs y `ROW_NUMBER()`.
+
+## Pre-entrega 5
+
+El archivo `pre-entrega-modulo-5.sql` contiene un análisis avanzado de ventas utilizando CTEs y Window Functions.
+
+Permite analizar:
+
+- Ventas mensuales por categoría.
+- Ranking de categorías.
+- Ventas acumuladas.
+- Promedio histórico.
+- Comparación del rendimiento entre `Exitoso` y `Bajo el promedio`.
+
+## Modelo de datos
+
+El proyecto utiliza tres tablas principales:
+
+- `clientes`
+- `productos`
+- `ventas`
+
+La categoría de los productos se encuentra en `productos.categoria`.
