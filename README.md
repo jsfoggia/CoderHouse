@@ -12,9 +12,9 @@ Este repositorio contiene las pre-entregas del curso de SQL, desarrolladas sobre
 
 El archivo `pre-entrega-modulo4.sql` contiene consultas multicapa para analizar:
 
-- Rentabilidad por categoría.
-- Clientes sin compras.
-- Top de compras por cliente.
+* Rentabilidad por categoría.
+* Clientes sin compras.
+* Top de compras por cliente.
 
 Las consultas utilizan `JOIN`, `GROUP BY`, `HAVING`, `COALESCE`, CTEs y `ROW_NUMBER()`.
 
@@ -24,18 +24,32 @@ El archivo `pre-entrega-modulo-5.sql` contiene un análisis avanzado de ventas u
 
 Permite analizar:
 
-- Ventas mensuales por categoría.
-- Ranking de categorías.
-- Ventas acumuladas.
-- Promedio histórico.
-- Comparación del rendimiento entre `Exitoso` y `Bajo el promedio`.
+* Ventas mensuales por categoría.
+* Ranking de categorías.
+* Ventas acumuladas.
+* Promedio histórico.
+* Comparación del rendimiento entre `Exitoso` y `Bajo el promedio`.
+
+## Administración de usuarios y roles
+
+El archivo correspondiente contiene la configuración de seguridad para una empresa ficticia, utilizando roles y permisos de PostgreSQL.
+
+Incluye:
+
+* Creación del rol `analista_datos_gr`.
+* Creación del rol `cientifico_datos_gr`.
+* Creación de usuarios.
+* Asignación de roles.
+* Permisos de lectura sobre las tablas.
+* Permiso `CREATE` para el rol de científicos de datos.
+* Restricción del permiso `DELETE` sobre la tabla `ventas`.
 
 ## Modelo de datos
 
 El proyecto utiliza tres tablas principales:
 
-- `clientes`
-- `productos`
-- `ventas`
+* `clientes`
+* `productos`
+* `ventas`
 
 La categoría de los productos se encuentra en `productos.categoria`.
